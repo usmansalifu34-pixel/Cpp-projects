@@ -19,4 +19,10 @@ class product {
     void setStock(int s){
         stockQuant = s;
     }
+    friend int getPrice(product p){
+        return p.price;
+    }
+    friend std::string getStock(product p){
+        return p.productName;
+    }
 };
